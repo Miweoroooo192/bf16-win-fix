@@ -33,8 +33,13 @@ sudo pacman -S gcc make sdl2
 If your Linux distribution is immutable (such as Fedora Atomic, Bazzite or SteamOS), you can use [Distrobox](https://distrobox.it/). 
 
 #### Windows
+Visual Studio 2022 or later with the C++ and C development tools installed
 
-Visual Studio 2022 or later with the C++ and C development tools installed and vcpkg integration is required.
+But since those tools doens't have SDL2, do this following command:
+
+```bash
+vcpkg integrate install
+```
 
 ### Compiling 
 Simply run the following commands inside a personal directory. 
